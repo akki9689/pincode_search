@@ -41,7 +41,8 @@ const PincodeLookup = () => {
     return (
         <div className="pincode-lookup">
             <h1>Enter Pincode</h1>
-            <input
+           <div id='search-container'>
+           <input
             id='search-input'
                 type="text"
                 placeholder="Enter 6-digit pincode"
@@ -49,6 +50,7 @@ const PincodeLookup = () => {
                 onChange={e => setPincode(e.target.value)}
             />
             <button id='lookup-btn' onClick={handleLookup}>Lookup</button>
+           </div>
 
             {loading && <div className="loader">Loading...</div>}
 
@@ -57,6 +59,7 @@ const PincodeLookup = () => {
             {data.length > 0 && (
                 <div className='container'>
                     <input
+                    className='filter-input'
                     id='search-input'
                         type="text"
                         placeholder="Filter"
