@@ -1,0 +1,63 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+.pincode-lookup{
+  padding: 20px;
+}
+.container{
+  margin-top: 20px;
+}
+.container ul{
+ list-style-type: none;
+ display: grid;
+ grid-template-columns:2fr 2fr 2fr;
+ 
+ row-gap: 10px;
+ column-gap: 10px;
+}
+.container ul li{
+  border: 1px solid black;
+  border-radius: 2px;
+  padding: 10px;
+}
+#search-input{
+  width: 60vw;
+  height: 6vw;
+  margin-top: 10px;
+  padding: 5px;
+}
+.pincode-lookup input:focus {
+  border-color: #4CAF50;
+}
+#lookup-btn{
+  height: 5vw;
+  margin-left: 10px;
+  width: 12vw;
+  border-radius: 5px;
+  background-color: rgb(13, 10, 16);
+  color: white;
+  font-size: 3vw;
+}
+#lookup-btn:hover{
+background-color: aliceblue;
+color: black;
+  transition: all 0.3s ease-in-out;
+}
+.loader{
+  text-align: center;
+  margin: 5px;
+  font-size: 20px;
+}
+@media only screen and (max-width:600px){
+  .container ul{
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    
+    row-gap: 10px;
+    column-gap: 10px;
+   }
+}
